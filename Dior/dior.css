@@ -1,0 +1,104 @@
+.head {
+    width: 78.125rem;
+    height: 4.375rem;
+}
+.button-1 {
+    width: 6.25rem;
+    height: 2.5rem;
+    margin-left: 0.625rem;
+    margin-top: 1.25rem;
+    border-bottom-right-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
+    display: inline-block;
+    border: 1px solid #aaaaaa;
+}
+.button-1>span {
+    display: inline-block;
+    margin-left: 1.875rem;
+    margin-top: 0.5rem;
+    color: black;
+}
+.input {
+    display: inline-block;
+    margin-left: 1.875rem;
+}
+.input>input {
+    width: 18.75rem;
+    height: 2.5rem;
+    border-bottom-right-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
+    border-color: #aaaaaa;
+    outline: none;
+    background-color: whitesmoke;
+    border: 1px solid #aaaaaa;
+    padding-left: 0.625rem;
+    font-size: 16px;
+}
+input::-webkit-input-placeholder{
+    position: relative;
+    left: 1.25rem;
+}
+img[alt="#"] {
+    position: absolute;
+    height: 1.125rem;
+    top: 2.5rem;
+    left: 26.25rem;
+}
+.head>span {
+    font-size: 44px;
+    font-family: "Arial Narrow";
+    color: #000033;
+    display: inline;
+    margin-left: 8.125rem;
+}
+.head-right {
+    display: inline-block;
+    width: 9.5rem;
+    height: 2.5rem;
+    margin-left: 25rem;
+}
+.head-right a {
+    margin-left: 1rem;
+}
+.container {
+    width: 78.125rem;
+    height: 38.5625rem;
+    margin-top: 1.25rem;
+    overflow: hidden;
+}
+.img {
+    width: 234.375rem;
+    animation: switch 15s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.img>img {
+    float: left;
+    width: 78.125rem;
+    height: 38.5625rem;
+}
+@keyframes switch {
+    0%, 35% {
+        margin-left: 0;
+    }
+    35%, 70% {
+        margin-left: -78.125rem;
+    }
+    70%, 100% {
+        margin-left: -156.25rem;
+    }
+}
+#target-1 {
+    width: 18.75rem;
+    height: 31.25rem;
+    display: none;
+    position: absolute;
+    top: 0px;
+    background-color: white;
+}
+#target-1:target {
+    display: block;
+}
